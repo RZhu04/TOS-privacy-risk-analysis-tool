@@ -1,1 +1,1 @@
-"# TOS-privacy-risk-analysis-tool" 
+# TOS-privacy-risk-analysis-tool
