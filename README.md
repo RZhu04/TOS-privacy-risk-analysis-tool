@@ -20,7 +20,7 @@ A tool to analyze Terms of Service and Privacy Policy documents for potential pr
 1. Clone the repository:
 
 ```bash
-git clone [[repository-url]](https://github.com/RZhu04/TOS-privacy-risk-analysis-tool)
+git clone https://github.com/RZhu04/TOS-privacy-risk-analysis-tool
 cd TOS-privacy-risk-analysis-tool
 ```
 
