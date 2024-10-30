@@ -1,0 +1,6 @@
+{
+  "watch": ["src/"],
+  "ext": ".py,.json",
+  "ignore": ["__pycache__", "*.pyc"],
+  "exec": "python src/server.py"
+} 
