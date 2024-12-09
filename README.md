@@ -79,8 +79,8 @@ The tool analyzes text and categorizes findings into three risk levels based on 
 
 ### Risk Levels
 - High Risk (> 0.8)
-- Medium Risk (0.65 - 0.8)
-- Low Risk (0.5 - 0.65)
+- Medium Risk (0.5 - 0.8)
+- Low Risk (0.0 - 0.5)
 
 ### Analysis Factors
 - Semantic similarity to known privacy patterns
