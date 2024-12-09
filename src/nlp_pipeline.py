@@ -44,6 +44,19 @@ def get_complete_sentence(sent):
             text += ' ' + next_sent[0].text.strip()
     return text
 
+def is_title(text):
+    """
+    Identify if a sentence is a title based on heuristics.
+    """
+    # Check capitalization (e.g., "Title Case")
+    words = text.split()
+    title_case = all(word.istitle() for word in words if word.isalpha())
+
+    # Check for length
+    short_length = len(words) <= 10  # Titles are usually short
+
+    return title_case or short_length
+
 def is_verb_negated(token):
     """
     Check if a verb token is negated by dependency relations.
@@ -115,7 +128,13 @@ def find_similar_phrases(text, patterns, bert_model, nlp):
         # Collect candidate sentences
         # Expand context window to 3 tokens before and after.
         for sent in doc.sents:
+            # Skip if it's identified as a title
+
             clean_sent = get_complete_sentence(sent)
+
+            if is_title(clean_sent):
+                continue
+
             if 20 < len(clean_sent) < 700:
                 start_idx = max(0, sent.start - 3)
                 end_idx = min(len(doc), sent.end + 3)
