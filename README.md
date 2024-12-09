@@ -28,7 +28,7 @@ cd TOS-privacy-risk-analysis-tool
 
 2. Open and run the provided Jupyter notebook:
 ```bash
-jupyter notebook run_program.ipynb
+jupyter notebook RUN_PROGRAM_SUBMISSION.ipynb
 ```
 
 3. Run each cell in sequence. The notebook will:
@@ -116,6 +116,6 @@ The tool analyzes text and categorizes findings into three risk levels based on 
 │   ├── nlp_pipeline.py # NLP processing logic
 │   └── main.py        # Flask application and API endpoints
 ├── cleanedTOS/        # Input text files
-├── run_program.ipynb  # Jupyter notebook for easy setup
+├── RUN_PROGRAM_SUBMISSION.ipynb  # Jupyter notebook for easy setup
 └── requirements.txt   # Python dependencies
 ```
